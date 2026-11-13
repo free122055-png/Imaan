@@ -1,0 +1,6 @@
+{
+  "name": "আইমান ব্রান্ড - খাঁটি তেল ও প্রাকৃতিক পণ্য",
+  "description": "আইমান ব্রান্ড (Aiman Brand) - ১০০% খাঁটি ঘানিভাঙা সরিষার তেল, কোল্ড-প্রেসড নারকেল তেল, খাঁটি ঘি ও প্রাকৃতিক তেলের সম্পূর্ণ ই-কমার্স স্টোর ও অ্যাডমিন প্যানেল।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

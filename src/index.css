@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-500: #FF7A00;
+  --color-brand-600: #F46000;
+  --color-brand-700: #E85802;
+  --color-brand-text: #C2410C;
+  --color-brand-50: #FFF4EA;
+  --color-brand-100: #FFE4CC;
+  --color-white: #FFFFFF;
+  --color-surface: #FFF9F3;
+  --color-ink: #1F2937;
+  --color-muted: #6B7280;
+  --color-line: #EEE7DF;
+}
+
+@layer base {
+  body {
+    font-family: 'Hind Siliguri', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--surface);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+  /* Prevent Bengali font diacritics clipping */
+  h1, h2, h3, h4, h5, h6, p, span, button, a, label, input, textarea {
+    line-height: 1.5;
+  }
+}
+
+/* Minimal Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD7CA;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BCAC;
+}
+
+/* Print specific styles for Invoices */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+  }
+  @page {
+    margin: 1cm;
+  }
+}
